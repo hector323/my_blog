@@ -1,3 +1,5 @@
+
+
 print("Building our static site")
 
 # Reads in the top.html
@@ -23,12 +25,12 @@ open('index.html', 'w+').write(combined_html)
 
 
 # Reads in the middle index.html
-middle_html = open('./content/art.html').read()
+middle_html = open('./content/projects.html').read()
 
 combined_html = top_html + middle_html + bottom_html
 
 # Writes the new index.html file to a brand new file in the same directory
-open('art.html', 'w+').write(combined_html)
+open('projects.html', 'w+').write(combined_html)
 
 # Reads in the middle index.html
 middle_html = open('./content/blog.html').read()
